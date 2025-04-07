@@ -1,32 +1,54 @@
 BODY {
-    FONT-FAMILY: Arial, sans-serif;
-    BACKGROUND-COLOR: #f8f9fa;
+    font-family: Arial, sans-serif;
+    background-color: #3e96bf; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-H2 {
-    FONT-SIZE: 20px;
+.center-box {
+    background-color: rgba(21, 189, 231, 0.216); 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(8px); 
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .box {
-    BORDER: 2px solid black;
-    PADDING: 20px;
-    TEXT-ALIGN: center;
-    BACKGROUND-COLOR: white;
-    MARGIN: 10px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 250px;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.box A {
-    TEXT-DECORATION: none;
-    COLOR: black;
-    FONT-SIZE: 18px;
-    FONT-WEIGHT: bold;
-    DISPLAY: block;
+
+.box a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
 }
 
 .box:hover {
-    BACKGROUND-COLOR: #007bff;
+    background-color: #007bff;
 }
 
-.box A:hover {
-    COLOR: white;
+.box:hover a {
+    color: white;
 }
